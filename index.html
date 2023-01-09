@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura | ONE</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Logo de Alura" srcset="">
+    </header>
+    <main class="container">
+        <section class="container-section">
+            <!-- Este será el lado izquierdo del Encriptador -->
+            <article class="containe1">
+                <!-- lado izquierdo -->
+                <input type="text" name="txtContenido" id="txtContenido" placeholder="Ingrese el texto aqui">
+                <p class="textcontenido"><img class="exclamations" src="img/circle-exclamation-solid.svg" alt="" srcset=""> Solo minusculas y sin acentos.</p>
+                <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
+            </article>
+            <!-- Este será el lado abajo (Botones) del Encriptador -->
+            <article class="containe2">
+                <!-- lado abajo (Botones) -->
+                <button class="btn-containe2" id="btnEncriptar">Encriptar</button>
+                <button class="btn-containe2" id="btnDesencriptar">Desencriptar</button>
+            </article>
+        </section>
+        <!-- Este será el lado derecho del Encriptador -->        
+        <aside class="container-side">
+            <!-- lado derecho -->
+            <img src="img/Muneco.png" id="imgMuneco" alt="Muñeno de 'No se encontró ningún mensaje...'" srcset="">
+            <h1 id="textEncontrado" class="titulo">Ningún mensaje fue encontrado</h1>
+            <textarea name="txtcopy" id="txtResultado" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <button id="btnCopiar">Copiar</button>
+        </aside>
+    </main>
+    <footer>
+        <p>©Copyright | Marlon E. Santiago</p>
+    </footer>
+</body>
+<script src="js/encriptados.js"></script>
+</html>

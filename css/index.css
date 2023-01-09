@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: auto;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 960px;
+    height: 650px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 24px;
+}
+
+.container .container-section {
+    border-radius: 24px;
+    padding: 50px;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#txtContenido {
+    width: 100%;
+    height: 48px;
+    font-size: 32px;
+    text-align: justify;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#txtContenido::placeholder {
+    color: #0A3871;
+}
+
+.exclamations {
+    width: 18px;
+    height: 18px;
+}
+
+.textcontenido {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.containe1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.containe2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 15%;
+}
+
+.btn-containe2 {
+    width: 328px;
+    height: 67px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+#btnEncriptar {
+    background: #0A3871;
+    color: #D8DFE8;
+}
+
+#btnDesencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+#txtResultado {
+    width: 300px;
+    height: 260px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+#imgMuneco {
+    width: 287px;
+    height: 304px;
+}
+
+#btnCopiar {
+    display: none;
+    background: #D8DFE8;
+    color: #0A3871;
+    text-align: center;
+    width: 300px;
+    height: 67px;
+    font-size: 18px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+.container .container-side {
+    border-radius: 24px;
+    padding: 30px;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgb(255, 255, 255);
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        margin: auto;
+        padding: 20px;
+        margin-left: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 24px;
+        margin: 0px;
+        width: 600px;
+        height: 900px;
+    }
+    
+    .container .container-section {
+        border-radius: 24px;
+        padding: 30px;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .container-section .containe1 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: auto;
+        height: 85%;
+    }
+
+    .containe1 #txtContenido {
+        width: 100%;
+        height: 48px;
+        text-align: justify;
+    }
+
+    .container-section .containe2 {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 15%;
+    }
+
+    .container .container-side {
+        border-radius: 24px;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container-side #imgMuneco {
+        display: none;
+    }
+
+    .container-side #textEncontrado {
+        display: none;
+    }
+
+    .container-side #txtResultado {
+        width: 100%;
+        height: 260px;
+    }
+
+    .container-side #btnCopiar {
+        width: 100%;
+        height: 67px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 24px;
+        margin: 0px;
+        width: 300px;
+        height: 900px;
+    }
+    
+    .container .container-section {
+        border-radius: 24px;
+        padding: 30px;
+        width: 100%;
+        height: 850px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .container-section .containe1 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: auto;
+        height: 85%;
+    }
+
+    .containe1 #txtContenido {
+        width: 100%;
+        height: 48px;
+        text-align: justify;
+    }
+
+    .container-section .containe2 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 15%;
+    }
+    
+    .container-section #btnEncriptar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container-section #btnDesencriptar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container .container-side {
+        margin-top: 75px;
+    }
+
+    .container-side #imgMuneco {
+        display: none;
+    }
+
+    .container-side #textEncontrado {
+        display: none;
+    }
+
+    .container-side #txtResultado {
+        width: 100%;
+        height: 260px;
+    }
+
+    .container-side #btnCopiar {
+        width: 100%;
+        height: 67px;
+    }
+}
